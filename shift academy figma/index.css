@@ -1,0 +1,528 @@
+@font-face {
+  font-family: fontmachine;
+  src: url(./img/NeueMachina-Regular.woff2);
+}
+@font-face {
+  font-family: hoshim;
+  src: url(./img/NeueMachina-Ultrabold.woff2);
+}
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+header {
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #023247;
+  padding-left: 7%;
+  height: 80px;
+}
+header ul {
+  list-style: none;
+  gap: 45px;
+  display: flex;
+}
+header ul li {
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  font-family: fontmachine;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+header button {
+  width: 65px;
+  height: 30px;
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  color: #FFFFFF;
+  background-color: #023247;
+}
+header .menu {
+  display: none;
+}
+@media (max-width: 860px) {
+  header ul li {
+    display: none;
+  }
+  header .menu {
+    display: block;
+  }
+}
+
+main {
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .mainOne {
+  margin-top: 150px;
+  width: 33%;
+  margin-left: 7%;
+}
+main .mainOne h2 {
+  position: absolute;
+  width: 28px;
+  height: 56px;
+  margin-top: -50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #023247;
+  transform: rotate(-35.84deg);
+}
+main .mainOne h3 {
+  position: relative;
+  width: 17px;
+  height: 49px;
+  margin-top: -40px;
+  margin-left: 50%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 49px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: rgba(97, 97, 97, 0.2);
+  transform: rotate(39.5deg);
+}
+main .mainOne h1 {
+  font-family: hoshim;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 51px;
+  color: #000000;
+}
+main .mainOne p {
+  margin: 40px auto;
+  font-family: fontmachine;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #000000;
+}
+main .mainOne button {
+  color: FFFFFF;
+  width: 235px;
+  height: 50px;
+  background: #023247;
+  box-shadow: 2px 2px 16px rgba(49, 49, 207, 0.4);
+  border-radius: 10px;
+}
+main .mainOne h6 {
+  font-family: fontmachine;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+main .mainImg {
+  width: 500px;
+  margin-top: 100px;
+}
+main .mainImg img {
+  width: 80%;
+}
+main .about {
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-top: 100px;
+  height: 550px;
+  background-color: #E7F3FF;
+}
+main .about .mainImg {
+  width: 50%;
+  margin-top: 100px;
+}
+main .about .mainImg img {
+  width: 80%;
+}
+main .about .aboutOne {
+  width: 36%;
+  margin-left: 7%;
+}
+main .about .aboutOne h1 {
+  font-family: hoshim;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+main .about .aboutOne p {
+  font-family: fontmachine;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (max-width: 860px) {
+  main .mainOne {
+    width: 700px;
+  }
+  main .mainOne h1 {
+    font-family: hoshim;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+  main .mainOne p {
+    font-family: hoshim;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+  }
+  main .mainOne button {
+    width: 235px;
+    height: 50px;
+  }
+  main .mainImg img {
+    width: 80%;
+  }
+  main .about {
+    flex-wrap: wrap;
+    height: 700px;
+  }
+  main .about .aboutOne {
+    position: relative;
+    top: -350px;
+    width: 80%;
+  }
+  main .about .aboutImg {
+    position: relative;
+    top: 300px;
+  }
+  main .about .aboutImg img {
+    width: 80%;
+  }
+}
+@media (max-width: 360px) {
+  main .mainOne h3 {
+    margin-left: 91px;
+  }
+  main .about {
+    height: 600px;
+  }
+  main .about .aboutImg {
+    position: relative;
+    top: 380px;
+  }
+  main .about .aboutOne {
+    padding-top: 250px;
+  }
+  main .about .aboutOne h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1B1B1B;
+  }
+  main .about .aboutOne p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1B1B1B;
+  }
+}
+
+h2 {
+  font-family: fontmachine;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 34px;
+  text-align: center;
+  color: #1B1B1B;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+us {
+  flex-wrap: wrap;
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  text-align: center;
+}
+us h5 {
+  font-family: fontmachine;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+}
+us p {
+  font-family: fontmachine;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #1B1B1B;
+}
+us .card {
+  width: 260px;
+  margin-bottom: 50px;
+}
+@media (width: 360px) {
+  us h2 {
+    margin-top: -200px;
+  }
+  us .us {
+    margin-top: 30px;
+  }
+  us .us .card {
+    display: inline-block;
+    width: 260px;
+    margin-top: 20px;
+  }
+  us .us p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+  }
+  us .us h5 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+courses {
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+}
+courses .coursesCard {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+courses .coursesCard .cards {
+  padding-top: 40px;
+  position: relative;
+  top: -10px;
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 28px rgba(27, 27, 27, 0.15);
+  border-radius: 4px;
+  width: 260px;
+  height: 350px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+courses .coursesCard .cards img {
+  margin-bottom: 50px;
+  background-color: #E7F3FF;
+  width: 115px;
+  height: 115px;
+  padding: 30px;
+  border-radius: 20%;
+}
+courses .coursesCard .cards h1 {
+  margin-bottom: 20px;
+  font-family: fontmachine;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+}
+courses .coursesCard .cards p {
+  font-family: fontmachine;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  text-align: center;
+}
+
+gallery .gallery {
+  max-width: 1350px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+gallery .gallery img {
+  width: 330px;
+}
+@media (max-width: 860px) {
+  gallery .gallery {
+    gap: 10px;
+  }
+  gallery .gallery img {
+    width: 40%;
+  }
+  gallery .gallery .yoqol {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  gallery .gallery img {
+    width: 80%;
+  }
+}
+
+h2 button {
+  width: 170px;
+  height: 50px;
+  background: #023247;
+  border-radius: 4px;
+  color: #E7F3FF;
+}
+@media (max-width: 860px) {
+  h2 button {
+    width: 170px;
+    height: 50px;
+    color: black;
+    background: #E7F3FF;
+    border-radius: 4px;
+  }
+}
+
+team {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  margin-bottom: 120px;
+}
+team .raund {
+  text-align: center;
+  width: 30%;
+  margin-bottom: 20px;
+}
+team .raund img {
+  width: 90%;
+  margin-bottom: 20px;
+}
+team .raund h1 {
+  font-family: fontmachine;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+}
+team .raund p {
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  text-align: center;
+  color: #000000;
+}
+@media (max-width: 860px) {
+  team div {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  team .raund {
+    width: 370px;
+    display: inline;
+  }
+}
+
+footer {
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  background: #023247;
+  padding: 70px 0;
+}
+footer div h3 {
+  font-family: fontmachine;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+footer div p {
+  margin-top: 20px;
+  font-family: fontmachine;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+footer div img {
+  margin: 20px;
+}
+@media (max-width: 860px) {
+  footer {
+    display: block;
+  }
+  footer .malumot {
+    width: 90%;
+  }
+  footer .malumot img {
+    padding: none;
+  }
+  footer div {
+    display: inline-block;
+    margin: 10px;
+    margin-top: 20px;
+  }
+}
+
+foterend .line {
+  background-color: #023247;
+  max-width: 1600px;
+  padding: 20px 0;
+}
+foterend .line div {
+  width: 90%;
+  height: 0px;
+  border: 1px solid #FFFFFF;
+  padding: none;
+}
+foterend .line p {
+  margin: 30px 5%;
+  font-family: fontmachine;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=index.css.map */
